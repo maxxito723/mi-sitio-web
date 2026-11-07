@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sitio oficial de [NOMBRE DE TU MARCA].">
+  <meta name="theme-color" content="#10152b">
+  <title>[NOMBRE DE TU MARCA] | Sitio oficial</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--panel:#151d35;--text:#f4f6ff;--muted:#b5bfd8;--accent:#9a8cff;--mint:#55ddc8}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 78% 8%,#28245b 0,transparent 34%),var(--bg);color:var(--text)}
+    .wrap{width:min(1080px,92%);margin:auto}header{display:flex;justify-content:space-between;align-items:center;padding:25px 0;gap:16px}
+    .brand{font-weight:850;letter-spacing:.04em;font-size:1.1rem}.brand span{color:var(--mint)}.tag{color:var(--muted);font-size:.9rem}
+    main{min-height:74vh;display:grid;place-items:center;padding:55px 0 80px}.hero{max-width:790px;text-align:center}
+    .pill{display:inline-block;border:1px solid #45416f;background:#211f46aa;color:#dedaff;border-radius:99px;padding:8px 14px;font-size:.85rem}
+    h1{font-size:clamp(2.7rem,8vw,5.5rem);line-height:1.02;letter-spacing:-.055em;margin:24px 0 18px}
+    h1 span{background:linear-gradient(90deg,#b3a8ff,#55ddc8);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .intro{color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem);line-height:1.75;max-width:650px;margin:auto}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+    a.button{padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none}.primary{background:linear-gradient(100deg,var(--accent),#665de5);color:white}.secondary{border:1px solid #46506c;color:var(--text)}
+    .note{margin:52px auto 0;padding:18px 20px;max-width:620px;border:1px solid #2d3857;background:#111a30cc;border-radius:16px;color:var(--muted);line-height:1.6;text-align:left}
+    footer{border-top:1px solid #26304b;padding:22px 0;color:#8e9bb9;font-size:.85rem;text-align:center}
+    @media(max-width:560px){header{align-items:flex-start;flex-direction:column}main{padding:35px 0 60px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">[NOMBRE DE TU <span>MARCA</span>]</div>
+      <div class="tag">Ideas · Tecnología · Innovación</div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="pill">Bienvenido a nuestro sitio oficial</div>
+        <h1>Ideas que se convierten en <span>soluciones.</span></h1>
+        <p class="intro">Estamos preparando algo nuevo. Muy pronto vas a encontrar aquí nuestros proyectos, productos y novedades.</p>
+        <div class="actions">
+          <a class="button primary" href="#proyecto">Conocer el proyecto</a>
+          <a class="button secondary" href="mailto:">Contacto próximamente</a>
+        </div>
+        <div class="note" id="proyecto"><strong>Estamos construyendo.</strong><br>Esta es la primera versión del sitio. Antes de publicarlo, reemplazá [NOMBRE DE TU MARCA] por el nombre definitivo y agregá tus datos de contacto.</div>
+      </section>
+    </main>
+    <footer>© <span id="year"></span> [NOMBRE DE TU MARCA]. Todos los derechos reservados.</footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
